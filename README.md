@@ -1,4 +1,4 @@
-# Task 1: Number Guessing Game
+#  Number Guessing Game
 
 A console-based Java application built for **Task 1** of a Java Programming Internship. The game generates a random number within a set range and guides the user with feedback until they guess it or run out of attempts.
 
