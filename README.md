@@ -1,26 +1,27 @@
 # Task 1: Number Guessing Game
 
-A console-based Java application built for **Task 1** of a Java Programming Internship. The game generates a random number within a set range and guides the user with feedback until they guess it or run out of attempts[cite: 1].
+A console-based Java application built for **Task 1** of a Java Programming Internship. The game generates a random number within a set range and guides the user with feedback until they guess it or run out of attempts.
 
 ## Project Overview
 
-The program runs an interactive command-line loop where players try to guess a secret integer between **1 and 100**[cite: 1]. It includes input validation, attempt limits, multi-round support, and score calculation so the game feels complete and reliable to test[cite: 1].
+The program runs an interactive command-line loop where players try to guess a secret integer between **1 and 100**.
+It includes input validation, attempt limits, multi-round support, and score calculation so the game feels complete and reliable to test.
 
 ## Features
 
-- **Random Number Generation:** Picks a random integer from `1` to `100` at the beginning of each round using `java.util.Random`[cite: 1].
-- **Directional Feedback:** Compares each guess against the secret number and prints **Too high!**, **Too low!**, or **Correct!**[cite: 1]
-- **Attempt Limit:** Caps each round at **7 attempts** and shows how many tries remain after each wrong guess[cite: 1].
-- **Input Validation:** Handles non-integer text and out-of-range numbers gracefully using `Scanner` checks instead of crashing[cite: 1].
-- **Multiple Rounds:** Lets the player choose whether to start another round (`y`/`n`) once a round finishes[cite: 1].
-- **Score & Session Summary:** Awards points based on remaining attempts and displays total rounds played, rounds won, and final score at the end[cite: 1].
+- **Random Number Generation:** Picks a random integer from `1` to `100` at the beginning of each round using `java.util.Random`.
+- **Directional Feedback:** Compares each guess against the secret number and prints **Too high!**, **Too low!**, or **Correct!**
+- **Attempt Limit:** Caps each round at **7 attempts** and shows how many tries remain after each wrong guess.
+- **Input Validation:** Handles non-integer text and out-of-range numbers gracefully using `Scanner` checks instead of crashing.
+- **Multiple Rounds:** Lets the player choose whether to start another round (`y`/`n`) once a round finishes.
+- **Score & Session Summary:** Awards points based on remaining attempts and displays total rounds played, rounds won, and final score at the end.
 
 ## Code Structure
 
 - `NumberGame.java`
   - `main(...)`: Controls the multi-round game loop, round state, scoring, and final session summary.
-  - `readGuess(...)`: Prompts the user, validates integer input, and ensures the guess falls within `1`–`100`[cite: 1].
-  - `askPlayAgain(...)`: Prompts the user to replay or exit after each round[cite: 1].
+  - `readGuess(...)`: Prompts the user, validates integer input, and ensures the guess falls within `1`–`100`.
+  - `askPlayAgain(...)`: Prompts the user to replay or exit after each round.
 
 ## Tech Stack & Tools
 
